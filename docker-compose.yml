@@ -28,7 +28,7 @@ services:
     image: composer:latest
     container_name: composer-crm
     volumes:
-      - ./X-CRM:/app/
+      - ./:/app/
     working_dir: /app/
     entrypoint: [ 'composer' ]
 
@@ -44,7 +44,7 @@ services:
     image: node:current-alpine
     container_name: npm-crm
     volumes:
-      - ./X-CRM:/app/
+      - ./:/app/
     ports:
       - "3020:3020"
       # - "3001:3001"
