@@ -20,7 +20,7 @@ cd x-crm && docker-compose up
 ```bash
 docker-compose run --rm composer-crm install
 ```
-##### NOTE: If token is requested, on your GitHub account, Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
+##### NOTE: If token is requested while running the above command, on your GitHub account, Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
 
 
 ### Run the below command to install the node packages
@@ -32,7 +32,7 @@ docker-compose run --rm npm-crm run build
 ```
 
 
-### Run the below command for migration
+### Run the below command to interact with the container
 ```bash
 docker exec -it crm_back_end /bin/bash
 ```
