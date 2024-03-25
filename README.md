@@ -20,7 +20,7 @@ cd x-crm && docker-compose up
 ```bash
 docker-compose run --rm composer-crm install
 ```
-##### NOTE: If token is requested, all you have to do is Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
+##### NOTE: If token is requested, on your GitHub account, Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
 
 
 ### Run the below command to install the node packages
