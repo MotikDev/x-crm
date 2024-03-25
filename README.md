@@ -1,11 +1,11 @@
-## How to start the project
+# How to start the project
 
 ### Clone this repository
 ```bash
 git clone https://github.com/MotikDev/x-crm.git
 ```
 
-# Setup
+## Setup
 ### Run the below command and update your 'MAIL_USERNAME' and 'MAIL_PASSWORD' for local testing
 ```bash
 cp .env.example .env
@@ -20,7 +20,8 @@ cd x-crm && docker-compose up
 ```bash
 docker-compose run --rm composer-crm install
 ```
-#### NOTE: If token is requested, all you have to do is Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
+##### NOTE: If token is requested, all you have to do is Goto "Settings" > "Developer Settings". Then, create a personal token and paste it into the terminal.
+
 
 ### Run the below command to install the node packages
 ```bash
@@ -29,6 +30,7 @@ docker-compose run --rm npm-crm install
 ```bash
 docker-compose run --rm npm-crm run build
 ```
+
 
 ### Run the below command for migration
 ```bash
@@ -39,10 +41,12 @@ docker exec -it crm_back_end /bin/bash
 php artisan key:generate && php artisan config:cache && php artisan migrate && php artisan storage:link && php artisan optimize:clear
 ```
 
+
 ### Copy the below URL and paste in your browser to use the application or use the port you assigned in the docker-compose file
 ```bash
 http://localhost:8080
 ```
+
 
 ## Assuming CPanel is being used to host this application
 ### Kindly create a cron job to check for users without profile image so reminder emails can be sent with three (3) days intervals between emails.
